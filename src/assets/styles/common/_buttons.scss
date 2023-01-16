@@ -1,0 +1,83 @@
+.btn {
+  font-family: "InterRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: $primary-color;
+  border: 1px solid $primary-blue;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: $white-color;
+  cursor: pointer;
+  box-shadow: none;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  text-align: center;
+
+  .btnIcon,
+  .userPlusIcon,
+  .fileExportIcon,
+  .gripLinesIcon {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: 15px;
+    top: 11px;
+  }
+
+  &.btnPrimary {
+    color: $white-color;
+    background: $primary-blue;
+
+    &.btnActionIcon {
+      svg {
+        color: currentColor;
+      }
+    }
+  }
+
+  &.btnSecondary {
+    border-color: $alto-gray;
+  }
+
+  &.btnDanger {
+    background: $crimson;
+    border-color: $alto-gray;
+  }
+
+  &.btnActionIcon {
+    padding: 10px 10px 10px 42px;
+    svg {
+      color: $dove-gray;
+    }
+  }
+
+  &:hover {
+    color: $white-color;
+    background: $primary-blue;
+
+    &.btnPrimary {
+      color: $primary-blue !important;
+      background: $white-color !important;
+    }
+
+    &.btnOrderOverview {
+      color: $white-color !important;
+      background: $primary-blue !important;
+    }
+
+    &.btnDanger {
+      background: $crimson;
+      border-color: $alto-gray;
+    }
+
+    &.btnActionIcon {
+      svg {
+        color: currentColor;
+      }
+    }
+  }
+}

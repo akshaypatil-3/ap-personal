@@ -1,0 +1,20 @@
+.checkbox {
+  [type="checkbox"] {
+    appearance: none;
+    background-color: transparent;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 3px solid $alto-gray;
+    height: 1.25em;
+    width: 1.25em;
+    border-radius: 0.25em;
+    margin-top: 8px !important;
+
+    &:checked {
+      border-color: $dove-gray;
+      background-image: url("../../../assets/images/checkmark.svg");
+      background-size: 85%;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+$primary-blue: #151863;
+$border-default: #eaeaea;
+$secondary-blue: #1f70fb;
+$header-primary: #ecf0f3;
+$primary-color: #000000;
+$background-color: #f8f9fa;
+$white-color: #fff;
+$border-primay: #dfe3e8;
+$sideBar-width: 85px;
+$text-color: #212b36;
+$disable-primary: #c4cdd5;
+
+$defalt-data-color: #737b7d;
+$border-secondary: #b9b9b9;
+
+$border-input: #dcdcdc;
+$gallery: #ededed;
+$gallery-1: #f0f0f0;
+$wild-sand: #f5f5f5;
+$silver: #cbcbcb;
+$silver-gray: #b9b9b9;
+$alto-gray: #d6d6d6;
+$athens-gray: #dfe3e8;
+$dove-gray: #727171;
+$cornflower-blue: #4ca7f9;
+$demin-blue: #1290cb;
+$hawkes-blue: #d6e5fe;
+$pattens-blue: #d3e3ff;
+$link-water: #ebf0f9;
+$red: #ff0000;
+$crimson: #dd1321;
+$blaze-orange: #ff5c00;
+$zircon: #eff5ff;
+$mine-shaft: #393939;
+$gallery: #ededed;
+$laurel: #2d8d00;
+$text-color-secondary: #727171;
+
+$border-radius: 10px;
+$input-border-radius: 5px;
+
+$datepicker-background-color: #f0f0f0 !default;
+$datepicker-selected-color: $primary-blue !default;
+
+@mixin setWidthHeight($width, $height) {
+  width: $width;
+  height: $height;
+}
