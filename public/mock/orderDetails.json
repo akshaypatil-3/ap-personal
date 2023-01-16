@@ -1,0 +1,12 @@
+{
+  "orderId": "1",
+  "orderCreatedDate": "11/26/2022, 4:30AM",
+  "deliveryMode": "Home Delivery",
+  "deliveryDate": "11/26/2022, 7:30AM",
+  "note": "NA",
+  "payment": "Online",
+  "subTotal": "$500.00",
+  "totalDiscount": "$1.00",
+  "tax": "$2.00",
+  "totalPayable": "$501.00"
+}

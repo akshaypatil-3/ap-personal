@@ -1,0 +1,47 @@
+{
+  "trackNumber": "12343445454555",
+  "deliveryAddress": {
+    "address1": "House No:1314, 2nd floor",
+    "address2": "Sector 18.",
+    "state": "Haryana",
+    "city": "Gurugram",
+    "pincode": "122022",
+    "landmark": "Near:Next to LIC",
+    "payment": "Online"
+  },
+  "deliveryPartner": "Thomas Transport",
+  "tracks": [
+    {
+      "track": "ORDER_DELIVERED",
+      "trackStatus": "NOT_STARTED",
+      "delayMessage": "",
+      "processDateTime": ""
+    },
+    {
+      "track": "ORDER_IN_TRANSIT",
+      "trackStatus": "IN_PROGRESS",
+      "delayMessage": "",
+      "processDateTime": "28/11/2022 9:30AM"
+    },
+    {
+      "track": "ORDER_DISPATCHED",
+      "trackStatus": "DONE",
+      "processDateTime": "27/11/2022 3:00PM"
+    },
+    {
+      "track": "ORDER_PROCESSED",
+      "trackStatus": "DONE",
+      "processDateTime": "27/11/2022 10:30AM"
+    },
+    {
+      "track": "PAYMENT_CONFIRMED",
+      "trackStatus": "DONE",
+      "processDateTime": "27/11/2022 9:30AM"
+    },
+    {
+      "track": "ORDER_PLACED",
+      "trackStatus": "DONE",
+      "processDateTime": "26/11/2022 7:30PM"
+    }
+  ]
+}

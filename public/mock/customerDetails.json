@@ -1,0 +1,13 @@
+{
+  "orderId": "1233",
+  "name": "Test User",
+  "email": "winsan@gmail.com",
+  "address1": "House No:1314, 2nd floor",
+  "address2": "Sector 18.",
+  "country": "Payment_Gateway",
+  "state": "Haryana",
+  "city": "Gurugram",
+  "pincode": "122022",
+  "landmark": "Near:Next to LIC",
+  "payment": "Online"
+}
