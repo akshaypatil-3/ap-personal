@@ -1,0 +1,127 @@
+@import "../../../../assets/styles/variables.scss";
+.timeLineContainer {
+  .timeline {
+    display: flex;
+    padding: 10px;
+
+    .leftSection {
+      flex: 1;
+
+      .headerSection {
+        display: flex;
+        margin-right: 20px;
+        align-items: center;
+
+        .trackNumber {
+          font-size: 18px;
+          text-align: start;
+          padding: 20px 10px 25px 10px;
+          flex: 1;
+        }
+
+        .btnDelivered {
+          height: 40px;
+          padding: 10px 23px;
+          color: $white-color;
+          background: $laurel;
+          border-color: $laurel;
+        }
+      }
+
+      .tracker {
+        text-align: left;
+        padding-left: 20px;
+        margin-bottom: 30px;
+
+        .trackerPoint {
+          font-size: 16px;
+          border-left: 2px dashed $primary-color;
+          padding: 0 28px 32px 28px;
+          position: relative;
+
+          .orderStepIcon {
+            position: absolute;
+            top: 0px;
+            left: -18px;
+          }
+
+          .status {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 5px;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+            border-left: none;
+          }
+        }
+      }
+    }
+
+    .rightSection {
+      .deliveryAddress {
+        font-size: 16px;
+        text-align: left;
+        width: 315px;
+        padding: 21px 35px 15px;
+        border-radius: 10px;
+        background: $gallery;
+        border: 1px solid $disable-primary;
+
+        .title {
+          font-weight: 700;
+          font-size: 18px;
+          margin-bottom: 6px;
+        }
+      }
+
+      .deliveryPartner {
+        width: 315px;
+        text-align: left;
+        padding: 22px 35px 30px;
+        border-radius: 10px;
+        background: $white-color;
+        border: 1px solid $cornflower-blue;
+
+        .title {
+          font-size: 18px;
+        }
+
+        .name {
+          font-weight: 700;
+        }
+
+        .btnCtrl {
+          display: flex;
+
+          .btn {
+            border-radius: 10px;
+            margin-right: 10px;
+            padding: 7px 18px;
+            color: $white-color;
+            align-items: center;
+            display: flex;
+            border: none;
+
+            &.btnPhone {
+              background-color: $primary-blue;
+            }
+
+            &.btnChat {
+              background-color: $crimson;
+            }
+
+            .phoneIcon,
+            .chatIcon {
+              padding-right: 5px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

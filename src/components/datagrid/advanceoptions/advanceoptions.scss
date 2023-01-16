@@ -1,0 +1,55 @@
+@import "../../../assets/styles/variables.scss";
+.advaceOptions {
+  width: 170px;
+  line-height: 15px;
+  min-height: 200px;
+  border: 1px solid $border-primay;
+  border-radius: 10px;
+  position: absolute;
+  right: 11px;
+  top: 36px;
+  border-radius: 8px;
+  font-size: 12px;
+  background: $white-color;
+  color: $text-color-secondary;
+  padding: 15px;
+  .mainHeader {
+    line-height: 15px;
+  }
+  .subHeader {
+    display: flex;
+    span {
+      font-size: 12px;
+    }
+    .icon {
+      flex: auto;
+      text-align: end;
+    }
+    align-items: center;
+  }
+  .sortByControls {
+    border: 1px solid $border-primay;
+    margin: 5px 0px 10px 0px;
+    padding: 0px 8px 8px 8px;
+    border-radius: 5px;
+    .dropdown-container {
+      padding-top: 8px;
+      .dropdown {
+        font-size: 14px;
+        color: $text-color-secondary;
+      }
+    }
+  }
+  .rowsVisibilty {
+    line-height: 12px;
+    display: flex;
+    padding: 5px 0px 5px 5px;
+    span {
+      padding-left: 5px;
+    }
+    .icon {
+      flex: auto;
+      text-align: end;
+    }
+  }
+}

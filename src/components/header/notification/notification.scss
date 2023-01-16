@@ -1,0 +1,10 @@
+.notificationIcon {
+  position: relative;
+  .circleIcon {
+    position: absolute;
+    top: 2px;
+    right: 0px;
+    font-size: 8px;
+    color: red;
+  }
+}

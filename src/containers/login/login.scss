@@ -1,0 +1,110 @@
+@import "../../assets/styles/variables.scss";
+.authPageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .authPageContent {
+    width: 100%;
+    height: 100%;
+    margin-top: 74px;
+    display: flex;
+    border: 1px solid $border-secondary;
+    border-radius: 20px;
+
+    .logoWrapper {
+      width: 38%;
+      display: flex;
+      border-right: 1px solid $border-secondary;
+
+      .logo {
+        width: 100px;
+        height: 44.32px;
+        margin: auto;
+        display: inline-flex;
+        align-self: center;
+      }
+    }
+
+    .loginWrapper {
+      width: 62%;
+
+      .loginContent {
+        padding-top: 78px;
+        padding-left: 62px;
+        padding-right: 144px;
+
+        .title {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 52px;
+          line-height: 63px;
+        }
+
+        .formWrapper {
+          font-family: 'Lato';
+          font-style: normal;
+          font-weight: 400;
+          padding-top: 46px;
+          text-align: left;
+
+          .formTitle {
+            font-size: 20px;
+            line-height: 24px;
+            color: $demin-blue;
+            margin-bottom: 15px;
+          }
+
+          .inputWrapper {
+            .loginControl {
+              font-size: 13px;
+              line-height: 16px;
+              display: flex;
+              align-items: center;
+              letter-spacing: 0.04em;
+              background: $white-color;
+              border: 1px solid rgba($demin-blue, 0.28);
+              box-shadow: 0px 1px 8px rgba($demin-blue, 0.2);
+              border-radius: 10px;
+              width: calc(100% - 40px);
+              padding: 14px 19px;
+              margin-bottom: 7px;
+            }
+          }
+
+          .buttonWrapper {
+            margin-top: 27px;
+            text-align: center;
+
+            .btnLogin {
+              font-weight: 900;
+              font-size: 15px;
+              line-height: 18px;
+              color: $demin-blue;
+              background-color: $white-color;
+              border-width: 2px;
+              border-style: solid;
+              border-color: $demin-blue;
+              border-radius: 15px;
+              padding: 9px 11px;
+              min-width: 135px;
+              cursor: pointer;
+
+              &:hover {
+                border-width: 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    .authPageContent {
+      max-width: 1015px;
+      max-height: 455px;
+    }
+  }
+}

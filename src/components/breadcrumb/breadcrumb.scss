@@ -1,0 +1,25 @@
+@import "../../assets/styles/variables.scss";
+.breadcrumb {
+  font-family: "InterRegular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  display: flex;
+  align-items: center;
+
+  .link {
+    padding: 10px 5px;
+
+    a {
+      font-weight: 700;
+      text-decoration: none;
+      color: $primary-color;
+    }
+
+    .icon {
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import "../../../assets/styles/variables.scss";
+.paginationBox {
+  display: flex;
+  padding-top: 50px;
+  align-items: center;
+  justify-content: end;
+  .viewLabel {
+    line-height: 40px;
+    padding-right: 10px;
+    vertical-align: middle;
+    font-size: 15px;
+  }
+  .pipe {
+    color: $primary-color;
+    opacity: 0.2;
+  }
+}
+
+.pageSizeDD {
+  line-height: 30px;
+  padding: 5px;
+}

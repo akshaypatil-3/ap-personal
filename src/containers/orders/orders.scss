@@ -1,0 +1,37 @@
+@import "../../assets/styles/variables.scss";
+.btnOrderOverview {
+  img {
+    margin-bottom: 3px;
+  }
+}
+
+.ordersSearch {
+  .status {
+    text-align: left;
+    .trackStatusMsg {
+      font-size: 12px;
+    }
+  }
+
+  .action {
+    display: flex;
+    align-items: center;
+    color: $blaze-orange;
+    font-size: 20px;
+  }
+  .pending {
+    color: #1f70fb;
+  }
+  .prepared {
+    color: #ff5c00;
+  }
+  .delayed {
+    color: #727171;
+  }
+  .delivered {
+    color: #2d8d00;
+  }
+  .checkbox {
+    display: flex;
+  }
+}

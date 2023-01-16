@@ -1,0 +1,88 @@
+@import "../../../assets/styles/variables.scss";
+.userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .caretDown {
+    cursor: pointer;
+  }
+
+  .profileDropdown {
+    width: 206px;
+    min-height: 122px;
+    position: absolute;
+    right: 31px;
+    top: 62px;
+    border-radius: 10px;
+    background: $white-color;
+    color: $primary-color;
+    border: 1px solid $border-primay;
+    box-shadow: 0px 4px 14px rgba($primary-color, 0.19);
+
+    .profileContainer {
+      padding: 11px 15px;
+      display: flex;
+
+      .profileImageWrapper {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+
+        .user {
+          margin-left: 0;
+          background-color: $primary-blue;
+        }
+      }
+
+      .profileDetailsWrapper {
+        text-align: left;
+        padding-left: 11px;
+        font-family: 'Lato';
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 0.2px;
+
+        .profileName {
+          font-size: 19px;
+          line-height: 30px;
+        }
+        .profileRole {
+          font-family: 'Mulish';
+          line-height: 16px;
+        }
+        .profileEmail {
+          line-height: 26px;
+          text-decoration-line: underline;
+        }
+      }
+    }
+
+    .actionContainer {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      text-align: center;
+      border-top: 0.5px solid $alto-gray;
+      padding: 3px 0;
+
+      a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        color: $primary-color;
+        gap: 4px;
+
+        svg {
+          font-size: 7px;
+        }
+      }
+    }
+  }
+}

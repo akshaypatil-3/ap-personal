@@ -1,0 +1,111 @@
+@import "../../../../assets/styles/variables.scss";
+.orderDetails {
+  .details {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 40px;
+
+    .leftSection {
+      .itemsWrapper {
+        padding-right: 90px;
+        border-right: 1px solid $border-secondary;
+      }
+    }
+
+    .rightSection {
+      padding-left: 90px;
+      .itemsWrapper {
+      }
+    }
+
+    .leftSection,
+    .rightSection {
+      flex: 1;
+
+      .title {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: start;
+      }
+    }
+
+    .total {
+      font-weight: 700;
+      border-radius: 10px;
+      background: $gallery-1;
+      padding: 10px 14px;
+
+      label {
+        font-size: 18px !important;
+        color: $primary-blue;
+      }
+
+      .itemValue {
+        font-size: 18px !important;
+        color: $crimson;
+      }
+    }
+  }
+
+  .productSummeryContainer {
+    min-height: 300px;
+
+    .title {
+      font-size: 22px;
+      font-weight: 700;
+      text-align: left;
+    }
+    .psHeader {
+      justify-content: space-between;
+
+      .pshRight {
+        background: $gallery-1;
+        .date {
+          font-size: 15px;
+          font-weight: 500;
+        }
+      }
+    }
+    .dataTableWrapper {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .detail {
+      position: relative;
+
+      .ellipsisVerticalIcon {
+        cursor: pointer;
+      }
+
+      .productSummaryDetails {
+        position: absolute;
+        top: 0px;
+        right: 20px;
+        background: $white-color;
+        border-radius: $border-radius;
+        border: 2px solid $primary-blue;
+        box-shadow: 0px 4px 14px rgba($primary-color, 0.19);
+        padding: 15px 15px 20px;
+        width: 300px;
+
+        .row {
+          display: flex;
+          text-align: start;
+
+          .col {
+            color: $primary-color;
+            width: 50%;
+
+            label {
+              font-family: "MulishLight";
+              font-size: 12px;
+              color: $dove-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}

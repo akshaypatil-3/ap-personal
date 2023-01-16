@@ -1,0 +1,65 @@
+@import "../../../assets/styles/variables.scss";
+.order {
+  .tab {
+    display: flex;
+    gap: 10px;
+
+    .btn {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      padding: 10px 20px;
+      border-color: $primary-blue;
+      border-radius: 5px;
+
+      &.active {
+        background-color: $primary-blue;
+        color: $white-color;
+      }
+    }
+  }
+
+  .tabContent {
+    margin: 5px 10px;
+
+    .orderTabContentContainer {
+      font-family: "Mulish";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      border: 1px solid $alto-gray;
+      background: $white-color;
+      min-height: 250px;
+
+      .item {
+        display: flex;
+
+        .itemLabel {
+          font-size: 12px;
+        }
+
+        .itemValue {
+          font-size: 16px;
+          font-weight: 700;
+          text-align: right;
+          flex: 1;
+        }
+      }
+    }
+  }
+
+  .backToOrderBtn {
+    flex: 1;
+    text-align: end;
+    justify-content: end;
+
+    .btn {
+      padding: 13px 11px;
+    }
+  }
+}

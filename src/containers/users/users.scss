@@ -1,0 +1,20 @@
+@import "../../assets/styles/variables.scss";
+.usersListWrapper {
+  .listDataGridWrapper {
+    .dataGrid {
+      .grid {
+        .gridHeader,
+        .gridContent {
+          .gridCol,
+          .gridRow {
+            text-align: left;
+            &:first-child,
+            &:last-child {
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}

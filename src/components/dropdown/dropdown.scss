@@ -1,0 +1,50 @@
+@import "../../assets/styles/variables.scss";
+.dropdown-container {
+  margin-top: 0vh;
+  @include setWidthHeight(100%, auto);
+
+  .dropdown-labelTitle {
+    padding-right: 2em;
+    font-size: 0.75em;
+    line-height: 1em;
+    letter-spacing: 0.013em;
+    color: $primary-color;
+    opacity: 0.7;
+    content: " ";
+    margin-left: 2rem;
+    @include setWidthHeight(100%, 100%);
+  }
+
+  .dropdown {
+    font-size: 1.3rem;
+    line-height: 1.8em;
+    letter-spacing: 0.2px;
+    color: $primary-color;
+    outline: none;
+    border: 1px solid $border-primay;
+    border-radius: 5px;
+    background-color: $background-color;
+    cursor: pointer;
+    padding: 5px 5px;
+    font-size: 15px;
+    width: 100%;
+  }
+
+  .dropdown-hr {
+    margin-left: 2rem;
+    @include setWidthHeight(92%, 0px);
+  }
+
+  option:hover {
+    background-color: yellow;
+  }
+}
+
+.dropdown-items {
+  background-color: $background-color;
+  font-size: 1em;
+  line-height: 1.35em;
+  color: $primary-color;
+  line-height: 1.18em;
+  @include setWidthHeight(0px, 40px);
+}

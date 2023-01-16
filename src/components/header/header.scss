@@ -1,0 +1,33 @@
+@import "../../assets/styles/variables.scss";
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1002;
+  color: $white-color;
+  background-color: $primary-blue;
+  border-bottom: 2px solid $border-default;
+
+  .headerNavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 7px 31px 7px 20px;
+
+    .logo {
+      justify-content: start;
+    }
+    .rightContainer {
+      flex: 1;
+      display: flex;
+      justify-content: end;
+      text-align: end;
+      align-items: center;
+      .user {
+        margin-left: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+@import "../../assets/styles/variables.scss";
+.dataTableWrapper {
+  border: 1px solid $alto-gray;
+  margin-bottom: 20px;
+
+  .tableTitle {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    color: $primary-color;
+    text-align: left;
+  }
+
+  .dataTable {
+    width: 100%;
+    display: grid;
+    overflow: auto;
+    background: $white-color;
+    border-top: 1px solid $alto-gray;
+
+    .columns {
+      display: contents;
+      grid-template-rows: 55px;
+
+      .cell {
+        font-family: "MulishLight";
+        font-size: 12px;
+        font-weight: 700;
+        color: $dove-gray;
+        padding: 7px 5px 3px;
+        border-bottom: 1px solid $alto-gray;
+      }
+    }
+
+    .rows {
+      display: contents;
+
+      .row {
+        display: contents;
+
+        .cell {
+          font-size: 14px;
+          color: $primary-color;
+          padding: 5px;
+          border-bottom: 1px solid $alto-gray;
+
+          .detail {
+            .ellipsisVerticalIcon {
+              svg {
+                width: 10px;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          .cell {
+            border-bottom: none;
+          }
+        }
+      }
+    }
+  }
+}

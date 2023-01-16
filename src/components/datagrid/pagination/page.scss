@@ -1,0 +1,35 @@
+@import "../../../assets/styles/variables.scss";
+
+.pageBtn {
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  border: 1px solid $border-primay;
+  background-color: $white-color;
+  color: $text-color;
+  margin: 5px;
+  vertical-align: middle;
+  line-height: 29px;
+  font-weight: 700;
+  text-align: center;
+  cursor: pointer;
+
+  &:hover {
+    border: 1px solid $primary-blue;
+    &.active,
+    &:disabled {
+      border: 1px solid $border-primay;
+    }
+  }
+
+  &:disabled {
+    color: #fff !important;
+    background-color: $disable-primary;
+    opacity: 0.5;
+  }
+
+  &.active {
+    background-color: $primary-blue;
+    color: $white-color;
+  }
+}

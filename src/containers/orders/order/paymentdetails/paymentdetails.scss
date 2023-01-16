@@ -1,0 +1,31 @@
+@import "../../../../assets/styles/variables.scss";
+.paymentDetails {
+  .title {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .details {
+    display: flex;
+
+    .leftSection {
+      flex: 1;
+    }
+
+    .rightSection {
+      flex: 1;
+
+      label {
+        font-size: 26px;
+        line-height: 48px;
+      }
+
+      .itemValue {
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 48px;
+        color: $primary-color;
+      }
+    }
+  }
+}

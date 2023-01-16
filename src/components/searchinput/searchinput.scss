@@ -1,0 +1,38 @@
+@import "../../assets/styles/variables.scss";
+.searchWrapper {
+  flex: 1 1;
+  display: flex;
+  align-items: center;
+  margin-right: 7px;
+
+  .searchBox {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+
+    .searchControl {
+      border: 1px solid transparent;
+      border-radius: 10px;
+      padding: 10px 40px 10px 30px;
+      width: calc(100% - 70px);
+      line-height: 21px;
+      font-size: 17px;
+      font-weight: 400;
+
+      &:focus,
+      &:hover,
+      &:active {
+        border: 1px solid $primary-blue !important;
+        outline: none;
+      }
+    }
+
+    .searchIcon {
+      align-items: center;
+      display: flex;
+      position: absolute;
+      top: 12px;
+      right: 12px;
+    }
+  }
+}

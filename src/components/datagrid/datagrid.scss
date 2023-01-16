@@ -1,0 +1,110 @@
+@import "../../assets/styles/variables.scss";
+
+.dataGrid {
+  font-family: "Mulish";
+  font-style: normal;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  min-height: 200px;
+  overflow: auto;
+
+  .grid {
+    display: grid;
+    grid-template-rows: 55px;
+  }
+
+  .gridHeader {
+    color: $primary-color;
+    font-weight: 600;
+    background: $white-color;
+    display: contents;
+    line-height: 55px;
+
+    .gridCol {
+      text-align: start;
+      background-color: inherit;
+      border-top: 1px solid $athens-gray;
+      border-bottom: 1px solid $athens-gray;
+      .colContent {
+        width: fit-content;
+      }
+      &:first-child {
+        border-left: 1px solid $athens-gray;
+      }
+
+      &:last-child {
+        border-right: 1px solid $athens-gray;
+      }
+
+      &.advanceFilterGridCol {
+        width: 25px;
+        background: $hawkes-blue;
+
+        .advOptions {
+          position: relative;
+          padding-left: 10px;
+          padding-right: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .shortIcon {
+      cursor: pointer;
+      padding-left: 3px;
+    }
+  }
+
+  .gridContent {
+    .gridRow {
+      .gridCol {
+        line-height: 20px;
+        align-self: center;
+        text-align: center;
+        padding: 10px 5px;
+        color: $text-color-secondary;
+        background-color: inherit;
+
+        &.moreColGridCol {
+          width: 20px;
+        }
+      }
+    }
+    .gridRow:hover {
+      .gridCol {
+        color: $primary-color;
+        cursor: pointer;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .gridHeader,
+  .gridContent,
+  .gridRow {
+    display: contents;
+  }
+  .gridRow:hover {
+    background: $defalt-data-color;
+  }
+  .alignItemLeft {
+    justify-content: start;
+    align-content: start;
+    text-align: start;
+  }
+  .alignItemRight {
+    justify-content: end;
+    align-content: end;
+    text-align: end;
+  }
+  .alignItemCenter {
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+  }
+  .alignItemLeft,
+  .alignItemRight,
+  .alignItemCenter {
+    display: flex;
+  }
+}

@@ -1,0 +1,17 @@
+@import "../../../../assets/styles/variables.scss";
+.customerDetails {
+
+  .itemsWrapper {
+    text-align: left;
+
+    .item {
+      font-size: 14px;
+      font-weight: 600;
+      flex-direction: column;
+
+      label {
+        font-weight: 400;
+      }
+    }
+  }
+}

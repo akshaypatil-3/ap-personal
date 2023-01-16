@@ -1,0 +1,434 @@
+// @import "../../../assets/styles/variables.scss";
+// .advancefilter {
+//   position: relative;
+//   .adFilterBtn {
+//     background-color: $crimson;
+//     width: 15px;
+//     cursor: pointer;
+//     margin-bottom: 7px;
+//   }
+//   .dropdown {
+//     position: absolute;
+//     transition: all 0.5s ease;
+//     margin-top: 1rem;
+//     left: 0px;
+//     top: 20px;
+//     width: 200px;
+//     background: $white-color;
+//     border: 1px solid $border-secondary;
+//     border-radius: 10px;
+//     ul {
+//       padding: 0px 10px;
+//       li {
+//         clear: both;
+//         list-style: none;
+//         text-align: start;
+//         cursor: pointer;
+//       }
+//       li:hover {
+//         background: $athens-gray;
+//       }
+//     }
+//   }
+// }
+
+@import "../../../assets/styles/variables.scss";
+
+.filterInfoWrapper {
+  display: flex;
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 8px;
+
+  .advanceFilters {
+    &.filtersWrapper {
+      position: relative;
+      display: flex;
+      flex: 1;
+
+      .filterButtonWrapper {
+        .btnFilters {
+          padding: 7px 15px;
+          border-radius: $border-radius;
+        }
+      }
+
+      .filtersDropdown {
+        font-family: "InterRegular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 18px;
+        text-align: left;
+        width: 190px;
+        min-height: 270px;
+        position: absolute;
+        padding: 10px 17px;
+        left: 0;
+        top: 40px;
+        border-radius: $border-radius;
+        background: $white-color;
+        color: $primary-color;
+        border: 1px solid $border-primay;
+        box-shadow: 0px 4px 14px rgba($primary-color, 0.11);
+        z-index: 9;
+
+        .filterOption {
+          cursor: pointer;
+          padding: 6px 12px;
+          display: flex;
+          align-content: center;
+          position: relative;
+
+          .optionLabel {
+            display: flex;
+            flex-grow: 1;
+          }
+
+          svg {
+            color: $primary-blue;
+            height: 9px !important;
+            align-self: center;
+            display: none;
+          }
+
+          &.active,
+          &:hover {
+            background: $gallery;
+            border-radius: 5px;
+
+            svg {
+              display: flex;
+            }
+          }
+        }
+      }
+
+      .filterOptionDropdown {
+        cursor: default;
+        min-width: 208px;
+        position: absolute;
+        left: 209px;
+        top: -11px;
+        border-radius: $border-radius;
+        background: $white-color;
+        color: $primary-color;
+        border: 1px solid $border-primay;
+        box-shadow: 0px 4px 14px rgba($primary-color, 0.11);
+        text-align: left;
+
+        .optionContainer {
+          padding: 7px 9px;
+
+          .clearWrapper {
+            text-align: right;
+            margin-bottom: 7px;
+
+            .clear {
+              font-size: 12px;
+              line-height: 15px;
+              color: $dove-gray;
+              cursor: pointer;
+            }
+          }
+
+          .filtersWrapper {
+            .filterTitle {
+              padding: 5px;
+            }
+
+            .checkbox {
+              display: flex;
+              align-items: center;
+              margin-bottom: 5px;
+
+              [type="checkbox"] {
+                margin-top: 3px !important;
+                margin-right: 8px;
+              }
+
+              label {
+                font-size: 15px;
+                line-height: 18px;
+                color: $primary-color;
+              }
+            }
+
+            .inputBox {
+              display: flex;
+              flex-direction: column;
+              padding: 5px 7px;
+
+              label {
+                font-size: 15px;
+                line-height: 18px;
+                margin-bottom: 8px;
+              }
+
+              .filterInput {
+                font-size: 14px;
+                line-height: 17px;
+                padding: 6px;
+                margin-bottom: 8px;
+                background: $gallery-1;
+                border: 1px solid $silver;
+                border-radius: $input-border-radius;
+
+                &:focus,
+                &:hover,
+                &:active {
+                  border: 1px solid $silver;
+                  outline: none;
+                }
+              }
+            }
+          }
+        }
+
+        .actionContainer {
+          font-weight: 700;
+          font-size: 12px;
+          line-height: 15px;
+          color: $white-color;
+          text-align: center;
+          cursor: pointer;
+          padding: 6px;
+
+          background: $primary-blue;
+          box-shadow: 0px 4px 15px rgba($primary-color, 0.11);
+          border-radius: 0px 0px 10px 10px;
+        }
+
+        .dateRangeWrapper {
+          display: flex;
+          gap: 12px;
+          padding: 6px 4px;
+
+          .dateRangeInputBox {
+            display: flex;
+            flex-direction: column;
+
+            .dateRangeInput {
+              font-size: 12px;
+              line-height: 15px;
+              background: $gallery-1;
+              border: 1px solid $silver;
+              border-radius: 5px;
+              padding: 6px;
+              flex: 1;
+
+              &:focus,
+              &:hover,
+              &:active {
+                border: 1px solid $silver;
+                outline: none;
+              }
+            }
+          }
+        }
+
+        &.dateFilter {
+          min-width: 262px;
+
+          .dateRangeWrapper {
+            .dateRangeInputBox {
+              text-align: left;
+
+              label {
+                font-size: 12px;
+                line-height: 15px;
+                color: $primary-color;
+                margin-right: 2px;
+              }
+
+              .dateRangeInput {
+                max-width: 100px;
+              }
+            }
+          }
+        }
+
+        &.dateTimeFilter {
+          min-width: 325px;
+          top: -191px;
+
+          .btn {
+            font-family: "InterRegular";
+            font-size: 12px;
+            line-height: 15px;
+            background: $gallery-1;
+            border: 1px solid $silver;
+            border-radius: 5px;
+            justify-content: center;
+            flex-grow: 1;
+
+            &:hover {
+              color: $white-color;
+              background: $primary-blue;
+            }
+          }
+
+          label {
+            font-size: 12px;
+            line-height: 15px;
+            color: $mine-shaft;
+            margin-bottom: 2px;
+          }
+
+          .dateWrapper {
+            margin-bottom: 10px;
+
+            .dateButtonsWrapper {
+              display: flex;
+              gap: 12px;
+              padding: 6px 4px;
+
+              .btnDateOption {
+                padding: 7px 15px;
+              }
+            }
+
+            .dateRangeWrapper {
+              padding: 6px 4px;
+
+              .dateRangeInputBox {
+                flex-direction: column;
+
+                .dateRangeInput {
+                  background: $wild-sand;
+                  border: 1px solid $primary-color;
+
+                  &:focus,
+                  &:hover,
+                  &:active {
+                    border: 1px solid $primary-color;
+                    outline: none;
+                  }
+                }
+              }
+            }
+          }
+
+          .timeWrapper {
+            margin-top: 10px;
+            margin-bottom: 10px;
+
+            .slotButtonsWrapper {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 12px;
+              padding: 6px 4px;
+              margin-bottom: 16px;
+
+              .btnTimeSlot {
+                flex: 1 1 90px;
+                padding: 7px;
+              }
+            }
+
+            .timeRangeWrapper {
+              display: flex;
+              flex-direction: row;
+              gap: 36px;
+              padding: 4px;
+
+              .timeRangeInputBox {
+                flex: 1;
+                display: inline-flex;
+                flex-direction: column;
+
+                .timeRangeGroup {
+                  display: inline-flex;
+                  flex-direction: row;
+                  border: 1px solid $alto-gray;
+                  border-radius: 5px;
+
+                  .timeRangeDropdown {
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: $dove-gray;
+                    flex: 1;
+                    padding: 6px;
+                    background: $white-color;
+                    border: none;
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    border-right: 1px solid $alto-gray;
+                  }
+
+                  .meridianDropdown {
+                    font-size: 12px;
+                    line-height: 15px;
+                    padding: 6px;
+                    color: $primary-color;
+                    background: $white-color;
+                    border: none;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .appliedFiltersWrapper {
+        font-family: "InterRegular";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        margin-left: 12px;
+        flex-grow: 1;
+        gap: 12px;
+        display: flex;
+        flex-wrap: wrap;
+
+        .appliedFilterItemWrapper {
+          position: relative;
+
+          .appliedFilterItem {
+            border: 1px solid #d6d6d6;
+            border-radius: $border-radius;
+            align-items: center;
+            display: inline-flex;
+            height: 37px;
+            padding-left: 12px;
+            padding-right: 12px;
+            cursor: pointer;
+
+            .filterColumn {
+              color: $dove-gray;
+              margin-right: 5px;
+              margin-left: 10px;
+
+              &:after {
+                content: ":";
+                margin-left: 2px;
+              }
+            }
+            .filterValues {
+              color: $primary-color;
+              margin-right: 5px;
+            }
+            .filterClose {
+              cursor: pointer;
+            }
+
+            &.active,
+            &:hover {
+              background: $white-color;
+            }
+          }
+
+          .filterOptionDropdown {
+            left: 0;
+            top: 39px;
+            z-index: 9;
+          }
+        }
+      }
+    }
+  }
+}

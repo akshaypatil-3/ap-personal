@@ -1,0 +1,52 @@
+@import "../../../assets/styles/variables.scss";
+.moreColumnTrigger {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 100%;
+}
+
+.moreColumnWrapper {
+  .moreColumnContainer {
+    .moreColumnDetails {
+      font-family: 'Mulish';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: $dove-gray;
+
+      .moreColumnItem {
+        display: flex;
+        margin-bottom: 10px;
+
+        .moreColumnLabel {
+          flex: 1;
+          text-align: left;
+          &:after {
+            content: ':',
+          }
+        }
+
+        .moreColumnValue {
+          color: $primary-color;
+        }
+
+        &.border-bottom {
+          padding-bottom: 8px;
+          border-bottom: 1px solid $border-secondary;
+
+          .moreColumnLabel {
+            &:after {
+              content: '',
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.show {
+    display: block;
+  }
+}
